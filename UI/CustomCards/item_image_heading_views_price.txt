@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_tending"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space"
+    android:elevation="@dimen/space"
+    android:padding="@dimen/space"
+    app:cardCornerRadius="@dimen/space">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/csl_trending"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_siv_trending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/space"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/siv_trending"
+                android:layout_width="@dimen/space_250"
+                android:layout_height="@dimen/space_250"
+                tools:src="@drawable/fashionlook" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_trending_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:padding="@dimen/space"
+            android:text="@string/brittany_s_new_loyal_chevrolet_shade"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv_siv_trending" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space"
+            android:text="@string/rs"
+            android:id="@+id/tv_trending_price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_trending_name" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space"
+            android:contentDescription="@string/viewsIv"
+            android:id="@+id/ivEye"
+            android:src="@drawable/ic_remove_red_eye_black_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_trending_name"
+            app:tint="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space"
+            android:text="@string/views"
+            android:id="@+id/tv_trending_views"
+            app:layout_constraintStart_toEndOf="@id/ivEye"
+            app:layout_constraintTop_toBottomOf="@id/tv_trending_name" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

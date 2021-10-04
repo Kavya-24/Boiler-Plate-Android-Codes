@@ -1,0 +1,142 @@
+  <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/rv_trending_home">
+
+                <TableRow
+                    android:id="@+id/r1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/colorPrimary"
+                    android:dividerPadding="2dp"
+                    android:showDividers="middle">
+
+                    <ImageView
+                        android:id="@+id/ivOrdersHome"
+                        android:layout_width="@dimen/space_100"
+                        android:layout_height="@dimen/space_100"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/space"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/space"
+                        android:src="@drawable/orders" />
+
+                    <ImageView
+                        android:id="@+id/ivCartHome"
+                        android:layout_width="@dimen/space_100"
+                        android:layout_height="@dimen/space_100"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/space"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/space"
+                        android:src="@drawable/emptycart" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/r2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/colorPrimary"
+                    android:dividerPadding="2dp"
+                    android:showDividers="middle">
+
+                    <TextView
+                        android:id="@+id/tvOrdersHome"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/space"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/space"
+                        android:text="@string/orders"
+                        android:textColor="@color/colorAccent" />
+
+                    <TextView
+                        android:id="@+id/tvCartHome"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/space"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/space"
+                        android:text="@string/mycart"
+                        android:textColor="@color/colorAccent" />
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="@dimen/space_2x"
+                    android:layout_marginEnd="@dimen/space_2x"
+                    android:background="@color/black" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/colorPrimary"
+                    android:dividerPadding="2dp"
+                    android:showDividers="middle">
+
+                    <ImageView
+                        android:id="@+id/ivFavouritesHome"
+                        android:layout_width="@dimen/space_100"
+                        android:layout_height="@dimen/space_100"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/space"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/space"
+                        android:src="@drawable/favourites" />
+
+                    <ImageView
+                        android:id="@+id/ivHistoryHome"
+                        android:layout_width="@dimen/space_100"
+                        android:layout_height="@dimen/space_100"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/space"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/space"
+                        android:src="@drawable/history" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/colorPrimary"
+                    android:dividerPadding="2dp"
+                    android:showDividers="middle"
+                    app:layout_constraintTop_toBottomOf="@id/r1">
+
+                    <TextView
+                        android:id="@+id/tvFavouritesHome"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/space"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/space"
+                        android:text="@string/favourites"
+                        android:textColor="@color/colorAccent" />
+
+                    <TextView
+                        android:id="@+id/tvHistoryHome"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/space"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/space"
+                        android:text="@string/history"
+                        android:textColor="@color/colorAccent" />
+
+                </TableRow>
+
+            </TableLayout>
